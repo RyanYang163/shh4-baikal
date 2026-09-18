@@ -1,0 +1,97 @@
+[en-us]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[zh-cn]
+name = "Baikal"
+auth = "shh"
+descript = "轻量 CalDAV / CardDAV 服务器：手机与电脑原生日历、通讯录同步。"
+release_note = "1. 首次发布。"
+important = "需要先在 TOS 应用中心安装并启用 DockerEngine。"
+
+[zh-hk]
+name = "Baikal"
+auth = "shh"
+descript = "轻量 CalDAV / CardDAV 服务器：手机与电脑原生日历、通讯录同步。"
+release_note = "1. 首次發佈。"
+important = "需要先在 TOS 應用中心安裝並啟用 DockerEngine。"
+
+[fr-fr]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[de-de]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[it-it]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[es-es]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[hu-hu]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[ja-jp]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[ko-kr]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[pl-pl]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[ru-ru]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[tr-tr]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."
+
+[pt-pt]
+name = "Baikal"
+auth = "shh"
+descript = "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation."
+release_note = "1. Initial release."
+important = "Requires DockerEngine from the TOS App Center."

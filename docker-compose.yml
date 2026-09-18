@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  shh4-baikal:
+    image: ckulka/baikal:nginx
+    container_name: shh4-baikal
+    restart: unless-stopped
+    ports:
+      - "18804:80"
+    user: "1000:1000"
+    volumes:
+      - /Volume*/DockerAppData/shh4-baikal/data:/var/www/baikal/Specific
+    environment:
+      - TZ=Asia/Shanghai
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "300m"
+          memory: 256M
+
+x-app-meta:
+  web:
+    port: 18804
+    protocol: http
