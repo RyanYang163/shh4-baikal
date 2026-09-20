@@ -1,0 +1,10 @@
+{
+  "name": "Baikal",
+  "license": "GPL-3.0",
+  "port": 18804,
+  "license_url": "https://raw.githubusercontent.com/sabre-io/Baikal/master/LICENSE",
+  "healthcheck": "curl -fsS http://localhost:80/ >/dev/null || exit 1",
+  "en": "Lightweight CalDAV and CardDAV server for calendar and contact synchronisation.",
+  "features": "- CalDAV calendar server\n- CardDAV contacts server\n- Works with native iOS / Android / desktop clients\n- Web-based administration",
+  "date": "2026-09-20"
+}

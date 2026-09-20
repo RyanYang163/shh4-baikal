@@ -1,45 +1,76 @@
 # Baikal
 
-| 项 | 值 |
+> TOS 7 application package for **Baikal** — platform integration only.
+> The application itself is provided by the upstream project, unmodified.
+
+## Overview
+
+Lightweight CalDAV and CardDAV server for calendar and contact synchronisation.
+
+上游项目 / Upstream: <https://sabre.io/baikal/>
+上游许可证 / License: **GPL-3.0**
+
+## Features
+
+- CalDAV calendar server
+- CardDAV contacts server
+- Works with native iOS / Android / desktop clients
+- Web-based administration
+
+## Installation
+
+1. Requirements: TOS 7.0+ and Docker Engine (install from the TOS App Center)
+2. Install from the TOS App Center
+3. Open the app and complete initial configuration
+
+## Usage
+
+1. Access URL: `http://${ip}:18804`
+2. Default credentials: see upstream documentation
+3. Key settings: see upstream documentation
+
+## Permissions
+
+| Permission | Rationale |
 |---|---|
-| 应用 ID | `shh4-baikal` |
-| 形态 | Docker 应用（Compose） · WebUI 外开（浏览器新标签） |
-| 版本 | 1.0.0 |
-| 上游项目 | https://sabre.io/baikal/ |
-| 上游许可证 | GPL-3.0 |
-| 宿主端口 | 18804 |
+| Network: port 18804 | Web UI access |
+| File system: `/Volume*/DockerAppData/shh4-baikal/` | Application data persistence |
+| User: shh4baikal | Isolated non-root service execution |
 
-## 简介
+## Configuration
 
-轻量 CalDAV / CardDAV 服务器：手机与电脑原生日历、通讯录同步。
+See `config.ini` for platform metadata; see `docker-compose.yml` for runtime configuration.
 
-## 打包
+## Ports
 
-```bash
-./build.sh                # 默认 x86_64
-./build.sh aarch64        # ARM（Deb 应用）
-```
+| Port | Protocol | Purpose |
+|---|---|---|
+| 18804 | TCP | Web UI (Baikal) |
 
-产物在 `build/output/`，同级生成 `<包名>.sha256`。
+## Support
 
-## 提交前必办事项
+- Documentation: https://sabre.io/baikal/
+- Issue tracker: https://sabre.io/baikal//issues
+- Community: https://sabre.io/baikal/
 
-- ⚠️⚠️ **H14 风险**：Baikal 官方明确表示不提供 Docker 镜像，本站使用的是社区镜像 ckulka/baikal。提交前必须确认：(a) 该镜像确实托管在 Docker Hub；(b) 审核方是否接受社区镜像。若不被接受，需自行构建并托管镜像。
-- ⚠️ 本应用为 PHP + Web 服务器架构，PHP 在 TOS 7 未预装，因此只能走 Docker，不能做 Deb。
-- 建议同时参考 Deb 双包模式作为备选方案。
-- [ ] 真机安装、启动、停止、卸载残留四项实测
-- [ ] 首屏加载 ≤ 5 秒（指引 H10）
-- [ ] x86_64 与 aarch64 分别构建并测试（指引 H7）
-- [ ] 提交前跑一遍指引 13.9 上架前自查清单
+## Security & Compliance
 
-## 隐私政策
+- **License**: GPL-3.0 — full text in [`LICENSE`](./LICENSE)
+- **Attribution**: see [`NOTICE`](./NOTICE)
+- **Privacy Policy**: see [`PRIVACY.md`](./PRIVACY.md)
+- **Vulnerability scan**: `trivy-report.txt` attached to each Release (HIGH/CRITICAL must be 0)
+- Runs as a non-root dedicated user; no privileged mode, no host network
 
-见 [PRIVACY.md](./PRIVACY.md)（对应审核项 C3–C8）。
+## Changelog
 
-## 许可证与出处
+### v1.0.1 (2026-09-20)
+- Compliance update: added LICENSE / NOTICE / PRIVACY materials,
+  declared upstream license inside the package, added container healthcheck
 
-本仓库**仅包含 TOS 平台集成所需的配置文件与打包脚本**，应用本体的源码与二进制来自上游项目：https://sabre.io/baikal/
+### v1.0.0
+- Initial release
 
-上游许可证：**%s**。本封装保留上游许可证声明，未修改上游代码（Deb 形态下按上游许可证要求随包提供 LICENSE）。
+## License
 
-应用名称与图标为上游项目的标识；本仓库图标为自行绘制的简易图形，不含上游商标元素（对应审核项 H19）。
+**GPL-3.0** — this packaging repository is distributed under the same license as the
+upstream project. Full text: [`LICENSE`](./LICENSE).
